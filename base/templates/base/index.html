@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+index
+{% endblock %}
+{% load static %}
+{% block content %}
+
+<style>
+.links a{
+color: rgb(2, 150, 236); 
+padding-left: 25px; 
+text-decoration: none;
+}
+.links a:hover{
+  color: rgb(235, 235, 235); 
+  size: 20px;
+}
+body{
+  color: rgb(231, 231, 218);
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url({% static 'images/landing2.jpg' %});
+  background-size: 1600px 700px;
+  background-position: top;
+  background-attachment: fixed;
+}
+</style>
+
+<div class="body">
+  <h1 style="text-align: center;font-size :80px ;">Manage Your tasks from your Browser!</h1>
+  <div class="links" style="text-align: center;font-size: 34px;" >
+    <a href="/accounts/register" >Register</a>
+    <a href="/accounts/login" >Login</a>
+
+  </div>
+
+</div>
+
+
+{% endblock %}

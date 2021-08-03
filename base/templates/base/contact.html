@@ -1,0 +1,35 @@
+{% extends 'base/main.html' %}
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="header-bar"><h1> Contact </h1></div>
+
+<div class="card-body" >
+ 
+    <p> Contact us directly if you have any questions </p>
+    <p>
+        Please write your name, email address and a message below if you have any questions.
+
+    </p>
+<form action="" method="post" class="contact-form">
+    {% csrf_token %} 
+    <label>
+        {{form.email.label}}</label>
+        {{form.email}}
+
+        <label>{{form.subject.label}} </label>
+        {{form.subject}}
+
+        <label>{{form.message.label}}</label>
+        {{form.message}}
+            
+        <input class="button" type="submit" value="Submit" class="btn btn-success">
+</form>
+</div>
+   
+
+{% endblock %}

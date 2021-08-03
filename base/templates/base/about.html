@@ -1,0 +1,50 @@
+{% extends 'base/main.html' %}
+{% block title %}
+About
+{% endblock %}
+{% load static %}
+{% block content %}
+<style>
+
+.About_images{
+    float: right;
+    background-position: top;
+    background-attachment: fixed;
+    margin-top: 35px;
+    
+}
+
+</style>
+
+<div class="header-bar"><h1>About</h1></div>
+<div class="card-body" >
+    
+<p style="font-size: larger;">This a simple todo list web app 
+    that allows you to create account and login.
+<br>type your tasks and delete them when you are done.
+<br>since its an online app this is a great way of organizing your tasks,
+anytime anywhere with any device.
+<br>specially if you move constantly between your phone and your computer.
+<br>
+</p>
+<hr>
+    <ul> <h3>I have developed this site by using </h3>
+        <li> Django framework </li>
+        <li> Html </li>
+        <li> Css </li>
+        <li> Bootstrap 4 </li>
+    </ul>
+  
+
+</div>
+<section>
+    <h3>Social</h3>
+    <ul class="icons alt">
+        <li><a href="https://linkedin.com/in/abenezer-asamenew-010b5b18a" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+        <li><a href="https://github.com/Edenian256" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://t.me/Edenian" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+
+    </ul>
+</section>
+
+{% endblock %}
